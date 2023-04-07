@@ -1,3 +1,55 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.nav-text-gradient {
+  background: #13B0F5;
+  background: linear-gradient(to right, #13B0F5 0%, #E70FAA 20%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+}
+
+.nav-logo-gradient {
+  background: #13B0F5;
+background: linear-gradient(to right, #13B0F5 0%, #E70FAA 50%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+.hero-gradient {
+  background: #13B0F5;
+  background: linear-gradient(to right, #13B0F5 0%, #E70FAA 76%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+.links:hover {
+  background: #13B0F5;
+  background: linear-gradient(to right, #13B0F5 0%, #E70FAA 69%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-image-gradient {
+	/* border-image: linear-gradient(to right, #13B0F5, #E70FAA); */
+  background: linear-gradient(45deg,red,blue) border-box; /*3*/
+    -webkit-mask: /*4*/
+       linear-gradient(#fff 0 0) padding-box, 
+       linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor; /*5'*/
+            mask-composite: exclude; /*5*/
+}
+
+.image-gradient::after {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  top: -9px;
+  bottom: -9px;
+  left: -9px;
+  right: -9px;
+  border-radius: 50%;
+  background: linear-gradient(to bottom, #13B0F5 0%, #E70FAA 69%);
+}
