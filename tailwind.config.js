@@ -14,7 +14,8 @@ module.exports = {
         solidHeading: '#42446E',
         lightContext: '#A7A7A7', 
         headerDark: '#D9D9D9', 
-        solidHeadingDarkMode: '#CCCCCC'
+        solidHeadingDarkMode: '#CCCCCC',
+        cardDark: '#363636'
       },
       fontSize: {
         fs1: '14px', 

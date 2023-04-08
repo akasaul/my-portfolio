@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 const TechStack = () => {
   return (
-    <div className={`${poppins.className}`}>
+    <div className={`${poppins.className}`} id='tech-stack'>
       <h2 className='text-fs5 dark:text-headerDark font-bold text-solidHeading text-center mb-2'>My Tech Stack</h2>
       <p className='text-fs2 text-darkContent dark:text-lightContext text-center mb-10'>Technologies I&apos;ve been working with recently</p>
       

@@ -20,13 +20,13 @@ const Nav = () => {
       <section className='w-full flex max-w-[1200px] mx-auto'>
         
         <div className='sm:flex-[0.4] flex-[0.2]'>
-          <h1 className='nav-logo-gradient text-fs2 font-bold'>{'{ 21 }'}</h1>  
-            <p className='nav-text-gradient sm:text-fs3 text-fs2 font-bold'>Nikodimos</p>
+          <h1 className='nav-logo-gradient text-fs1 sm:text-fs2 font-bold'>{'{ 21 }'}</h1>  
+            <p className='nav-text-gradient sm:block hidden sm:text-fs3 text-fs1 font-bold'>Nikodimos</p>
         </div>
         
         <div className='flex flex-[0.8] sm:flex-[0.6] gap-4 items-center'>
         
-          <ul className={`${sans.className} justify-around gap-4 flex-1 ml-auto font-medium flex text-darkContent sm:text-fs2 text-fs1 dark:text-lightContext`}>
+          <ul className={`${sans.className} justify-around sm:gap-4 gap-2 flex-1 ml-auto font-medium flex text-darkContent sm:text-fs2 text-fs1 dark:text-lightContext`}>
            
             <li className='hover:cursor-pointer links'>
               <Link href='#home'>
