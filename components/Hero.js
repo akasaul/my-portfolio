@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <section className={`${poppins.className} justify-between flex my-20 flex-col sm:flex-row gap-5 items-center font-bold`}>
      
-      <h1 className="text-solidHeading lg:text-fs7 text-fs6 dark:text-headerDark">
+      <h1 className="text-solidHeading lg:text-fs7 text-fs5 xs:text-fs6 dark:text-headerDark">
         <span className="block">
           Hi  👋, 
         </span>

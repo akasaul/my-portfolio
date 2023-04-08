@@ -28,9 +28,9 @@ const Project = ({title, description, projectImg, stack, liveViewLink, githubLin
 
         <div className='flex items-center justify-between
         dark:text-solidHeadingDarkMode'>
-        <Link className='text-fs1 font-bold flex items-center gap-3 underline' href={liveViewLink}><FaLink /> Live Preview</Link>
+        <a className='text-fs1 font-bold flex items-center gap-3 underline' target='_blank' href={liveViewLink}><FaLink /> Live Preview</a>
 
-        <Link className='text-fs1 font-bold flex items-center gap-3 underline' href={githubLink}><FaGithub /> View Code</Link>
+        <a className='text-fs1 font-bold flex items-center gap-3 underline' target='_blank' href={githubLink}><FaGithub /> View Code</a>
 
 
         </div>

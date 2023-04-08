@@ -33,6 +33,9 @@ module.exports = {
       },
       fontWeight: {
         medium: 500
+      },
+      screens: {
+        xs: '400px'
       }
     },
   },

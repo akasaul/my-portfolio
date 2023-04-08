@@ -8,31 +8,31 @@ const Footer = () => {
         <ul className={`${sans.className} flex-1 sm:gap-4 gap-2 sm:ml-auto flex text-darkContent dark:text-lightContext`}>
            
            <li className='hover:cursor-pointer links'>
-             <Link href='#home'>
+             <Link scroll={false} href='#home'>
                Home
              </Link>
            </li>
            
            <li className='hover:cursor-pointer links'>
-             <Link href='#about'>
+             <Link scroll={false} href='#about'>
                About
              </Link>
            </li>
 
            <li className='hover:cursor-pointer links'>
-             <Link href='#tech-stack'>
+             <Link scroll={false} href='#tech-stack'>
                Tech
              </Link>
            </li>
 
            <li className='hover:cursor-pointer links'>
-             <Link href='#projects'>
+             <Link scroll={false} href='#projects'>
                Projects
              </Link>
            </li>
 
            <li className='hover:cursor-pointer links'>
-             <Link href='#contact'>
+             <Link scroll={false} href='#contact'>
                Contact
              </Link>
            </li>
