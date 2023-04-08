@@ -15,7 +15,7 @@ const Nav = () => {
   }
 
   return (
-    <nav className='py-3 align-top px-4'>
+    <nav className='py-3 align-top px-4' id='home'>
 
       <section className='w-full flex max-w-[1200px] mx-auto'>
         

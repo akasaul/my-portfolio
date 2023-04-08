@@ -47,3 +47,8 @@ background: linear-gradient(to right, #13B0F5 0%, #E70FAA 50%);
   border-radius: 50%;
   background: linear-gradient(to bottom, #13B0F5 0%, #E70FAA 69%);
 }
+
+
+.btn {
+  @apply outline outline-1 self-center p-2 px-5 rounded-lg outline-[#13B0F5] hover:bg-gradient-to-l from-[#13B0F5] to-[#E70FAA] hover:outline-none hover:text-white text-[#E70FAA];
+}

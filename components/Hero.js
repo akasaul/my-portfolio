@@ -1,9 +1,24 @@
 import Image from "next/image"
 import { poppins } from '../fonts/fonts'
+import { motion } from 'framer-motion';
 
 const Hero = () => {
   return (
-    <section className={`${poppins.className} justify-between flex my-20 flex-col sm:flex-row gap-5 items-center font-bold`}>
+    <motion.section initial={{
+      opacity: 0
+    }} whileInView={{
+      opacity: 1,
+      y: 0
+    }} 
+
+    transition={{
+      duration: 1
+    }}
+
+    animate={{
+      y: 100
+    }}
+    className={`${poppins.className} justify-between flex my-20 flex-col sm:flex-row gap-5 items-center font-bold`}>
      
       <h1 className="text-solidHeading lg:text-fs7 text-fs5 xs:text-fs6 dark:text-headerDark">
         <span className="block">
@@ -18,13 +33,23 @@ const Hero = () => {
         I build things for web
       </h1>
 
-      <div className="image-gradient relative z-10">
+      <motion.div
+      initial={{
+        scale: 0.75
+      }} whileInView={{
+        scale: 1
+      }} 
+  
+      transition={{
+        duration: 1
+      }}
+      className="image-gradient relative z-10">
         <Image src='/images/proxy1.jpeg' className="max-w-[250px]
         lg:max-w-[350px] lg:max-h-[350px]
          max-h-[250px] object-cover rounded-[50%] z-10 sticky" height={340} width={340} alt='Nikodimos Jemaneh' />
-    </div>
+    </motion.div>
     
-    </section>
+    </motion.section>
   )
 }
 

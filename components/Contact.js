@@ -1,7 +1,11 @@
+import { useState } from "react";
 import { FaGithub, FaTelegram, FaLinkedin, FaMailchimp, FaEnvelope } from "react-icons/fa"
 import { sans } from '../fonts/fonts';
 
 const Contact = () => {
+
+  const [message, setMessage] = useState('');
+
   return (
     <article className={`${sans.className} mb-8`} id='contact'>
 
@@ -25,13 +29,13 @@ const Contact = () => {
 
       </section>
       
-      {/* <form className="max-w-[700px] mx-auto flex flex-col gap-5">
+      <form className="max-w-[700px] mx-auto flex flex-col gap-5">
         <label className="flex flex-row items-center gap-3 justify-center text-darkContent dark:lightContext"><FaEnvelope /> Email Me</label>
-        <textarea rows={4}  className='p-2 border-2 rounded-[0.2rem] border-[#E70FAA] focus:outline-none dark:text-lightContext dark:border-lightContext bg-transparent'></textarea>
+        <textarea value={message} onChange={(e) => setMessage(e.target.value)} rows={4} className='p-2 border-2 rounded-[0.2rem] border-[#E70FAA] focus:outline-none dark:text-lightContext dark:border-lightContext bg-transparent'></textarea>
 
-      <a href={`mailto: nikodio`} type="button" className="outline outline-1 self-center p-2 px-5 rounded-lg outline-[#13B0F5] hover:bg-gradient-to-l from-[#13B0F5] to-[#E70FAA] hover:outline-none hover:text-white text-[#E70FAA]">Send</a>
+        <a href={`mailto: nikodimosjemaneh40@gmail.com?subject=Hello Nikodimos&body=${message}`} type="button" className="btn">Send</a>
 
-      </form> */}
+      </form>
 
         
     </article>
