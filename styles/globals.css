@@ -52,3 +52,11 @@ background: linear-gradient(to right, #13B0F5 0%, #E70FAA 50%);
 .btn {
   @apply outline outline-1 self-center p-2 px-5 rounded-lg outline-[#13B0F5] hover:bg-gradient-to-l from-[#13B0F5] to-[#E70FAA] hover:outline-none hover:text-white text-[#E70FAA];
 }
+
+.glow {
+  -webkit-box-shadow:0px 0px 247px 112px rgba(19,177,245,0.41);
+  -moz-box-shadow: 0px 0px 247px 112px rgba(19,177,245,0.41);
+  box-shadow: 0px 0px 247px 112px rgba(19,177,245,0.41);
+}
+
+

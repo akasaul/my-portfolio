@@ -1,11 +1,12 @@
 import { poppins } from '../fonts/fonts'
 import Image from 'next/image'
-import Link from 'next/link'
 import { FaGithub, FaLink } from 'react-icons/fa'
+import { motion } from 'framer-motion'
 
-const Project = ({title, description, projectImg, stack, liveViewLink, githubLink}) => {
+const Project = ({title, description, index, projectImg, stack, liveViewLink, githubLink}) => {
   return (
-    <div className={`${poppins.className} cursor-pointer hover:scale-105 transition-transform duration-300 flex flex-col max-w-[450px]
+    <div
+     className={`${poppins.className} cursor-pointer hover:scale-105 transition-transform duration-300 flex flex-col max-w-[450px]
     mx-auto rounded-[1rem] shadow-2xl overflow-hidden dark:bg-cardDark`}>
       <Image src={projectImg} className='w-full h-[200px] object-cover' width={500} height={500}  alt={title}/>
 

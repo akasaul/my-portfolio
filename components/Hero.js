@@ -1,6 +1,7 @@
 import Image from "next/image"
 import { poppins } from '../fonts/fonts'
 import { motion } from 'framer-motion';
+import { TypeAnimation } from 'react-type-animation'
 
 const Hero = () => {
   return (
@@ -28,9 +29,27 @@ const Hero = () => {
           My name is 
         </span>
         <span className="block hero-gradient">
-          Nikodimos Jemaneh
+        
+          <TypeAnimation sequence={[
+            'Nikodimos Jemaneh'
+          ]} 
+            cursor={true}
+          />
+          
         </span>
-        I build things for web
+        I build <span className="hero-gradient">
+          
+          <TypeAnimation sequence={[
+              'Frontend', 
+              2000,
+              'Backend',
+              2500,
+              'Web', 
+              3000
+            ]} 
+              cursor={true}
+            />
+          </span> 
       </h1>
 
       <motion.div
@@ -45,7 +64,7 @@ const Hero = () => {
       }}
       className="image-gradient relative z-10">
         <Image src='/images/proxy1.jpeg' className="max-w-[250px]
-        lg:max-w-[350px] lg:max-h-[350px]
+        lg:max-w-[350px] lg:max-h-[350px] glow
          max-h-[250px] object-cover rounded-[50%] z-10 sticky" height={340} width={340} alt='Nikodimos Jemaneh' />
     </motion.div>
     
