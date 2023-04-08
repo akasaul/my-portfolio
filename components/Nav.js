@@ -1,14 +1,12 @@
 import { themeContext } from '@/context/themeContext';
 import Link from 'next/link'
 import { useContext } from 'react';
-import { FaBars, FaCloudMoon, FaGit, FaGithub, FaLightbulb, FaLinkedin, FaMoon, FaSun, FaTelegram } from 'react-icons/fa'
-import { sans, poppins } from '../fonts/fonts';
+import { FaCloudMoon, FaEnvelope, FaGithub, FaLinkedin, FaSun, FaTelegram } from 'react-icons/fa'
+import { sans } from '../fonts/fonts';
 
 const Nav = () => {
 
   const {darkMode, setDarkMode} = useContext(themeContext);
-
-  console.log(darkMode);
 
   const toggleTheme = () => {
     setDarkMode(prev => !prev);
@@ -61,9 +59,17 @@ const Nav = () => {
           </ul>
 
           <div className='sm:flex hidden gap-4 text-darkContent'>
-            <FaGithub size={22} className='cursor-pointer hover:text-lightContext' />
+            <a href='https://github.com/akasaul' target='_blank'>
+              <FaGithub size={22} className='cursor-pointer hover:text-lightContext' />
+            </a>
+
+            <a href='https://t.me/NJK47' target='_blank'>
             <FaTelegram size={22} className='cursor-pointer hover:text-lightContext' />
-            <FaLinkedin size={22} className='cursor-pointer hover:text-lightContext' />
+            </a>
+    
+            <a href={`mailto: nikodimosjemaneh40@gmail.com?subject=Hello Nikodimos`} type="button">
+              <FaEnvelope size={22} className='cursor-pointer hover:text-lightContext' />
+            </a>
           </div>
 
           <button className='dark:text-darkContent'>

@@ -20,9 +20,18 @@ const Contact = () => {
 
 
             <div className='flex gap-4 dark:text-darkContent text-solidHeading'>
-                <FaGithub size={22} className='cursor-pointer' />
-                <FaTelegram size={22} className='cursor-pointer' />
-                <FaLinkedin size={22} className='cursor-pointer' />
+                <a href='https://github.com/akasaul' target='_blank'>
+                  <FaGithub size={22} className='cursor-pointer hover:text-lightContext' />
+                </a>
+
+                <a href='https://t.me/NJK47' target='_blank'>
+                <FaTelegram size={22} className='cursor-pointer hover:text-lightContext' />
+                </a>
+        
+                <a href={`mailto: nikodimosjemaneh40@gmail.com?subject=Hello Nikodimos`} type="button">
+                  <FaEnvelope size={22} className='cursor-pointer hover:text-lightContext' />
+                </a>
+    
               </div>
 
             </div>

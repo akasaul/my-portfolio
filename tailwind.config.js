@@ -35,7 +35,7 @@ module.exports = {
         medium: 500
       },
       screens: {
-        xs: '400px'
+        xs: '410px'
       }
     },
   },

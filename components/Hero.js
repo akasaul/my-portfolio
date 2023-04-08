@@ -45,7 +45,7 @@ const Hero = () => {
               'Backend',
               2500,
               'Web', 
-              3000
+              2700
             ]} 
               cursor={true}
             />
@@ -63,9 +63,9 @@ const Hero = () => {
         duration: 1
       }}
       className="image-gradient relative z-10">
-        <Image src='/images/proxy1.jpeg' className="max-w-[250px]
-        lg:max-w-[350px] lg:max-h-[350px] glow
-         max-h-[250px] object-cover rounded-[50%] z-10 sticky" height={340} width={340} alt='Nikodimos Jemaneh' />
+        <Image src='/images/coding.jpg' className="w-[250px]
+        lg:w-[350px] lg:h-[350px] glow
+         h-[250px] object-cover rounded-[50%] z-10 sticky" height={340} width={340} alt='Nikodimos Jemaneh' />
     </motion.div>
     
     </motion.section>
