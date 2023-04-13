@@ -63,9 +63,10 @@ const Hero = () => {
         duration: 1
       }}
       className="image-gradient relative z-10">
-        <Image src='/images/coding.jpg' className="w-[250px]
+        <Image src='/images/portfolio_img.jpg' className="w-[250px]
+        object-bottom
         lg:w-[350px] lg:h-[350px] glow
-         h-[250px] object-cover rounded-[50%] z-10 sticky" height={340} width={340} alt='Nikodimos Jemaneh' />
+         h-[250px] object-cover rounded-[50%] z-10 sticky" height={1500} width={1500} alt='Nikodimos Jemaneh' />
     </motion.div>
     
     </motion.section>
