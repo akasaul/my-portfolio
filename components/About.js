@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { MdExpandLess, MdExpandMore } from "react-icons/md";
+import { MdDownload, MdExpandLess, MdExpandMore } from "react-icons/md";
 import { motion } from 'framer-motion'
 
 const About = () => {
@@ -38,8 +38,11 @@ const About = () => {
           <button onClick={() => setExpand(prev => !prev)} className="flex items-center mt-2 mx-auto gap-2 btn">More <MdExpandMore /> </button>
         }
 
-
       </p>
+
+      <a href="/files/internship_doc.pdf" download>
+      <button className="flex items-center mt-2 mx-auto gap-2 btn">Download Intership Request pdf <MdDownload /></button>
+      </a>
 
 
     </motion.section>
