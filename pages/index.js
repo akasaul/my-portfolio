@@ -6,6 +6,7 @@ import Footer from "@/components/Footer";
 import About from "@/components/About";
 import { motion, useScroll } from 'framer-motion'
 import PageProgress from "@/components/PageProgress";
+import Experience from "@/components/Experience";
 
 export default function Home() {
   const { scrollYProgress } = useScroll();
@@ -14,6 +15,7 @@ export default function Home() {
       <PageProgress width={scrollYProgress} />
       <Hero />
       <TechStack />
+      <Experience />
       <About />
       <Projects />
       <Contact />
